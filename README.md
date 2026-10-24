@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# ShopZone Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+React storefront and admin panel for **ShopZone** e-commerce.
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+Modern, responsive web UI for browsing products, managing a shopping cart, placing orders, using a wishlist, and administering products, orders, and users. Communicates with the ShopZone Spring Boot API using JWT authentication.
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React
+- React Router
+- Tailwind CSS
+- Axios
+- Context API (Auth, Cart, Wishlist, Products)
+- Swiper (product carousels and image galleries)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+### Customer storefront
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Home page: hero, deals, hot picks, brand promos, category navigation
+- Product detail page with multi-image gallery
+- Search results
+- Category and brand product listings
+- Shopping cart (add, update quantity, remove)
+- Checkout and order confirmation
+- Order history and order detail
+- Wishlist
+- User profile
+- Browse catalog **without login**; cart / checkout / wishlist require authentication
 
-### `npm run build`
+### Admin panel
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Dashboard overview
+- Product management (create, edit, images)
+- Order management and status updates
+- User list
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Prerequisites
 
-### `npm run eject`
+- Node.js 18 or newer
+- npm
+- Running ShopZone API: [shopzone-backend](https://github.com/AliRahimi97/shopzone-backend) (default `http://localhost:8080`)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Install and run
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm install
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+App URL (default):
+http://localhost:3000
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## API connection
+The frontend expects the backend at http://localhost:8080 unless you change the Axios base URL and image URL helpers.
 
-## Learn More
+## Demo flow
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Open the store without logging in → browse products and categories
+2. Register or log in as a customer → add items to cart → checkout → view orders
+3. Log in as an admin → manage products and orders in the admin area
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Related repository
+Backend (Spring Boot API): shopzone-backend
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Author
+Ali Rahimi
