@@ -37,6 +37,30 @@ Modern, responsive web UI for browsing products, managing a shopping cart, placi
 - Order management and status updates
 - User list
 
+## Screenshots
+
+### Home
+
+![ShopZone home page 1](docs/screenshots/page1.png)
+
+![ShopZone home page 2](docs/screenshots/page2.png)
+
+![ShopZone home page 3](docs/screenshots/page3.png)
+
+![ShopZone home page 4](docs/screenshots/page4.png)
+
+### Product detail
+
+![Product detail](docs/screenshots/page5.png)
+
+### Cart
+
+![Shopping cart](docs/screenshots/page6.png)
+
+### Admin
+
+![Admin panel](docs/screenshots/page7.png)
+
 ## Getting Started
 
 ### Prerequisites
