@@ -2,7 +2,7 @@ import api from "../components/axiosInstance";
 
 
 
-const BaseURL = "http://localhost:8080/api/orders";
+const BaseURL = "https://shopzone-api-h8iv.onrender.com/api/orders";
 
 export const OrderService = {
     checkout: (token, userId, paymentMethod = "CARD") => 
