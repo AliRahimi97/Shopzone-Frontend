@@ -1,4 +1,4 @@
-const API_BASE = "http://localhost:8080";
+const API_BASE = "https://shopzone-api-h8iv.onrender.com";
 
 export const getImageUrl = (url) => {
   if (!url) return "https://via.placeholder.com/400x400?text=No+Image";
