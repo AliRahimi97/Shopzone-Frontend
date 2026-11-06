@@ -1,7 +1,7 @@
 
 import api from "../components/axiosInstance";
 
-const BaseURL = "http://localhost:8080/api/wishlist";
+const BaseURL = "https://shopzone-api-h8iv.onrender.com/api/wishlist";
 
 export const WishlistService = {
     get: (token, userId) =>
