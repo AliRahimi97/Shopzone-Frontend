@@ -2,7 +2,7 @@ import axios from "axios";
 import { isTokenExpired } from "../utils/JwtUtils";
 
 const api = axios.create({
-  baseURL: "http://localhost:8080/api",
+  baseURL: "https://shopzone-api-h8iv.onrender.com/api",
 });
 
 api.interceptors.request.use((config) => {
