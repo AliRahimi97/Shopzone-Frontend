@@ -26,12 +26,12 @@ export const OrderService = {
             }
         ),
         getAllOrders: (token) =>
-            api.get("http://localhost:8080/api/orders/admin/all", {
+            api.get("https://shopzone-api-h8iv.onrender.com/api/orders/admin/all", {
                 headers: { Authorization: `Bearer ${token}` },
         }),
         updateStatus: (token, orderId, status) =>
             api.put(
-                `http://localhost:8080/api/orders/admin/${orderId}/status?status=${status}`,
+                `https://shopzone-api-h8iv.onrender.com/api/orders/admin/${orderId}/status?status=${status}`,
                 {},
                 { headers: { Authorization: `Bearer ${token}` } }
         ),
