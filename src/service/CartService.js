@@ -2,7 +2,7 @@ import api from "../components/axiosInstance";
 
 
 
-const BaseURL = "http://localhost:8080/api/cart";
+const BaseURL = "https://shopzone-api-h8iv.onrender.com/api/cart";
 
 export const CartService = {
     
